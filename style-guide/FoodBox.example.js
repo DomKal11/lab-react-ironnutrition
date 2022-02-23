@@ -6,10 +6,12 @@ import { Card, Col, Button } from 'antd';
 
 // Iteration 2
 function FoodBox(props) {
+  console.log(props);
+  const { food } = props;
   return (
     <Col>
       <Card
-        title={'FOOD_NAME_HERE'}
+        title={food.name}
         style={{ width: 230, height: 300, margin: 10 }}
       >
         <img src={'FOOD_IMAGE_HERE'} height={60} alt="food" />
